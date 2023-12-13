@@ -1,12 +1,12 @@
-# coding: utf-8
+ # coding: utf-8
 from __future__ import (
     absolute_import,
     print_function,
     unicode_literals,
 )
 
-import collections
 import functools
+from collections.abc import Hashable
 
 
 class memoized(object):
@@ -21,7 +21,7 @@ class memoized(object):
         self.cache = {}
 
     def __call__(self, *args):
-        if not isinstance(args, collections.Hashable):
+        if not isinstance(args, Hashable):
             # uncacheable. a list, for instance.
             # better to not cache than blow up.
             return self.func(*args)
