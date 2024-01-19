@@ -38,7 +38,7 @@ def main():
         name="PyDocX",
         version=find_version('pydocx', '__init__.py'),
         description="docx (OOXML) to html converter",
-        author="Jason Ward, Sam Portnow",
+        author="Jason Ward, Sam Portnow, Nicolas D. Gomez",
         author_email="jason.louard.ward@gmail.com, samson91787@gmail.com",
         url="http://github.com/CenterForOpenScience/pydocx",
         platforms=["any"],
